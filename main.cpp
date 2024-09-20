@@ -1,21 +1,19 @@
-#include <stdio.h>
+//Programa: Nombre
 #include <conio.h>
-
+#include <stdio.h>
+//cstdio
 
 int main()
 {
-    int dia, mes, anio, edad;
-    printf ("Dame tu dia de nacimiento:");
-    scanf ("%d", &dia);
+    char nombre[20],apellido[20];
 
-    printf ("Dame tu mes de nacimiento:");
-    scanf ("%d", &mes);
+    printf( "Introduzca su nombre:" );
+    scanf( "%s", nombre );
+    printf( "\nIntoduzca su apellido:" );
+    scanf("%s", apellido);
+    printf( "\nHola %s %s, buenos d%cas", nombre, apellido, 161 );//investigar para que el 161
 
-    printf("Dame tu anio de nacimiento:");
-    scanf("%d", &anio);
+    getch();//Pausa
 
-    edad=2024-anio;
-    printf("Tu edad es: %d", edad);
-
-    getch();
+    return 0;
 }
